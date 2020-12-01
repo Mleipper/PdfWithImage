@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<script src="~/js/jquery.js"></script>
+<button id="btnPdf">Generate Report</button>
+
+<script type="text/javascript">
+    $("#btnPdf").click(function () {
+        window.open("../Home/PrintStudent?param=1", "_blank");
+    });
+</script>
